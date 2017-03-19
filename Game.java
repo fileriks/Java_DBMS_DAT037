@@ -7,16 +7,7 @@
  * 3) Implement the three functions showPossibleMoves, showPlayerAssets
  *    and showScores.
  */
-import java.math.BigDecimal;
-import java.net.URL;
-import java.sql.*; // JDBC stuff.
-import java.util.Calendar;
-import java.util.Map;
-import java.util.Properties;
-import java.io.*;  // Reading user input.
-import java.util.ArrayList;
-import java.util.concurrent.Executor;
-public class Game
+
 {
 	public class Player
 	{
@@ -143,7 +134,7 @@ public class Game
  	 * between these two areas.
  	 */
 	void insertRoad(Connection conn, String area1, String country1, String area2, String country2) throws SQLException {
-		try {	
+		try {
 			PreparedStatement st = conn.prepareStatement("INSERT INTO Roads VALUES (?,?,?,?,?,?,cast(? as INT))");
 			String empty = "";
 			st.setString(2, area1);
@@ -264,7 +255,7 @@ public class Game
 	    }
 	    rs.close();
 	    st.close();
-	    
+
 	    PreparedStatement st2  = conn.prepareStatement("SELECT * FROM Roads WHERE (ownerpersonnummer = ? AND ownercountry = ?)");
 	    st2.setString(1, personnummer);
 	    st2.setString(2, country);
