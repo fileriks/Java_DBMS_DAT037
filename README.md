@@ -10,5 +10,5 @@ optionssetup()
 play()
 readLine()
 and constructor and main method.
-The rest is written by me
+The remaining methods are custom made, as per instructions
 
