@@ -7,15 +7,7 @@
  * 3) Implement the three functions showPossibleMoves, showPlayerAssets
  *    and showScores.
  */
-import java.math.BigDecimal;
-import java.net.URL;
-import java.sql.*; // JDBC stuff.
-import java.util.Calendar;
-import java.util.Map;
-import java.util.Properties;
-import java.io.*;  // Reading user input.
-import java.util.ArrayList;
-import java.util.concurrent.Executor;
+cane
 //This is  a comment
 public class Game
 {
